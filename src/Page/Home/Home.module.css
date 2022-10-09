@@ -1,0 +1,32 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonContainer {
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+}
+
+.boxContainer {
+  min-width: 90vw;
+  min-height: 85vh;
+  max-width: max-content;
+  max-width: fit-content;
+  border: 2px solid grey;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 2px solid blue;
+    background-color: white;
+    cursor: pointer;
+}
+
