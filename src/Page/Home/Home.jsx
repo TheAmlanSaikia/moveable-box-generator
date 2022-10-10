@@ -17,11 +17,11 @@ const Home = () => {
       </section>
       <section className={styles.boxContainer}>
         {boxState &&
-          boxState.map(({ id, zIndex }) => {
-            return <Box key={id} zIndex={zIndex} />;
+          boxState.map(({ id, zIndex, selected }) => {
+            return <Box key={id} selected={selected} id={id} zIndex={zIndex} />;
           })}
       </section>
-      {console.log(boxState)}
+      {/* {console.log(boxState)} */}
     </div>
   );
 };
