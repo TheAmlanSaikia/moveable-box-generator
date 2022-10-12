@@ -2,6 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { useBox } from "../../Context/BoxContext";
 import styles from "./Box.module.css";
 
+/**
+ *
+ * @param {} id, zIndex, position, transform values
+ * @returns renders box
+ */
+
 const Box = ({
   id,
   zIndex,
@@ -16,6 +22,9 @@ const Box = ({
   const { boxState, boxDispatch } = useBox();
   const { keyBoardCheck } = boxState;
 
+  /**
+   *  add or remove keydown events
+   */
   useEffect(() => {
     if (keyBoardCheck && selected) {
       window.addEventListener("keydown", boxMovement);
@@ -27,6 +36,9 @@ const Box = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected, keyBoardCheck]);
 
+ /**
+  * get box position values
+  */
   useEffect(() => {
     const { offsetTop, offsetLeft } = positionRef.current;
     boxDispatch({
@@ -37,6 +49,14 @@ const Box = ({
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+
+  /**
+   * 
+   * @param {*} event 
+   * @returns triggers reducer function on keydown
+   *  
+   */
 
   const boxMovement = (event) => {
     if (selected) {

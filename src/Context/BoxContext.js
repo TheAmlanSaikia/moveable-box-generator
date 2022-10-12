@@ -17,6 +17,10 @@ const BoxProvider = ({ children }) => {
     </BoxContext.Provider>
   );
 };
+/**
+ * 
+ * @returns custom hook for using context values 
+ */
 
 const useBox = () => useContext(BoxContext);
 
