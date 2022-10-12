@@ -36,9 +36,9 @@ const Box = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected, keyBoardCheck]);
 
- /**
-  * get box position values
-  */
+  /**
+   * get box position values
+   */
   useEffect(() => {
     const { offsetTop, offsetLeft } = positionRef.current;
     boxDispatch({
@@ -50,12 +50,11 @@ const Box = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
   /**
-   * 
-   * @param {*} event 
+   *
+   * @param {*} event
    * @returns triggers reducer function on keydown
-   *  
+   *
    */
 
   const boxMovement = (event) => {
@@ -85,6 +84,13 @@ const Box = ({
             payload: "left",
             id: id,
           });
+
+        case 46:
+          return boxDispatch({
+            type: "DELETE_BOX",
+            id:id,
+          });
+
         default:
           return;
       }
