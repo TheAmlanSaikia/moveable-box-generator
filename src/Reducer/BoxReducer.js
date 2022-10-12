@@ -72,6 +72,12 @@ const boxReducerFunction = (boxState, { type, payload, id, top, left }) => {
           }),
       };
 
+     case "DELETE_BOX":
+        return {
+            ...boxState,
+            boxData:  boxState.boxData.filter((box) => box.id !== id )
+        } 
+
     case "CLEAR_ALL": {
       return {
         keyBoardCheck: false,
