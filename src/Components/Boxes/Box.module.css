@@ -1,0 +1,8 @@
+.boxStyle {
+  height: 15rem;
+  width: 15rem;
+  text-align: center;
+  background-color: #9cc0e7;
+  border-radius: 5px;
+  border: 1px solid white;
+}

@@ -1,0 +1,26 @@
+.buttonContainer {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 2px solid blue;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 3rem;
+  }
+  
+  .btnClr {
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 2px solid red;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 3rem;
+  }
+  
