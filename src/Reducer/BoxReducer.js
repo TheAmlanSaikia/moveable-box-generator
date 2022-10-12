@@ -1,13 +1,16 @@
 const boxReducerFunction = (boxState, { type, payload, id, top, left }) => {
   switch (type) {
     case "ADD_BOX":
-      return {
+     console.log(boxState)  
+    return {
         ...boxState,
-        boxData: [
-          ...boxState.boxData,
+        boxData: 
+        [
+          ...boxState.boxData,                        
+        
           {
-            id: payload,
-            zIndex: payload,
+            id: boxState.boxData.some((box)=>box.id === payload) ? payload+1 : payload,
+            zIndex:  boxState.boxData.some((box)=>box.id === payload) ? payload+1 : payload,
             selected: false,
             top: 0,
             left: 0,
