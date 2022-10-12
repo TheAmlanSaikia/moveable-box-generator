@@ -1,7 +1,6 @@
 const boxReducerFunction = (boxState, { type, payload, id, top, left }) => {
   switch (type) {
     case "ADD_BOX":
-     console.log(boxState)  
     return {
         ...boxState,
         boxData: 
@@ -22,13 +21,11 @@ const boxReducerFunction = (boxState, { type, payload, id, top, left }) => {
       };
 
     case "ADD_KEYBOARD":
-      console.log(payload);
       return {
         ...boxState,
         keyBoardCheck: !boxState.keyBoardCheck,
       };
     case "SELECT_BOX":
-      console.log(payload);
       return {
         ...boxState,
         boxData:
