@@ -28,3 +28,6 @@ npm start
 
 ![newCapture](https://user-images.githubusercontent.com/83667291/195428111-0eac0c28-cdb5-4aa8-873e-7f7a5949498b.JPG)
 
+![Position Absolute](https://user-images.githubusercontent.com/83667291/200247896-f7bbd2e8-8c41-4211-acab-9e8bc5f7e17d.png)
+
+![position Absolute 2](https://user-images.githubusercontent.com/83667291/200247908-99fce598-48f3-4ec1-9f46-d7e1db6e3e6c.JPG)
